@@ -112,23 +112,6 @@ Tibetan                        |42|81.8%|80.2%|84.3%|81.9%
 ULOG                           |26|53.3%|77.1%|73.0%|89.1%
 --Average--                    |  |75.0%|82.5%|82.4%|85.7%
 
-### Compare MCL and KCL
-
-The loss surface of MCL is more similar to the cross-entropy (CE) than KCL. Empirically, MCL converged faster than KCL. For details, please refer to the [ICLR paper](https://openreview.net/forum?id=SJzR2iRcK7).
-
-<a href="https://openreview.net/pdf?id=SJzR2iRcK7"><img src="fig/loss_surface_compare.png" width="640"></a>
-
-## Related Applications
-### Lane detection for autonomous driving / Instance segmentation
-```
-@article{Hsu18_InsSeg,
-	title =     {Learning to Cluster for Proposal-Free Instance Segmentation},
-	author =    {Yen-Chang Hsu, Zheng Xu, Zsolt Kira, Jiawei Huang},
-	booktitle = {accepted to the International Joint Conference on Neural Networks (IJCNN)},
-	year =      {2018},
-	url =       {https://arxiv.org/abs/1803.06459}
-}
-```
 
 ### Acknowledgments
-This work was supported by the National Science Foundation and National Robotics Initiative (grant # IIS-1426998) and DARPA’s Lifelong Learning Machines (L2M) program, under Cooperative Agreement HR0011-18-2-001.
+This is a Reproducibility Challenge which is based on the paper-Multi-class classification without multi-class labels
