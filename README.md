@@ -2,7 +2,7 @@
 Paper: https://openreview.net/forum?id=SJzR2iRcK7
 Author's code:https://github.com/GT-RIPL/L2C
 
-#Team member：
+# Team member：
 
 
 
@@ -15,14 +15,10 @@ Author's code:https://github.com/GT-RIPL/L2C
 
 
 
-A clustering strategy with deep neural networks. [This blog article](https://mlatgt.blog/2018/04/29/learning-to-cluster/) provides a generic overview.
+
 
 ## Introduction
-This repository provides the PyTorch implementation of the [transfer learning schemes (L2C)](https://arxiv.org/abs/1711.10125) and two learning criteria useful for deep clustering:
-- [Meta Classification Likelihood (MCL)*](https://arxiv.org/abs/1901.00544) - News: Accepted to [ICLR2019](https://openreview.net/forum?id=SJzR2iRcK7) (Title: "Multi-class classification without multi-class labels").
-- [KLD-based Contrastive Loss (KCL)](https://arxiv.org/abs/1511.06321)
 
-<sub><sup>*It is renamed from [CCL](https://arxiv.org/abs/1806.11078)</sup></sub>
 
 This repository covers following references:
 ```
@@ -88,7 +84,7 @@ python demo_omniglot_transfer.py -h
 ```
 #### Notes
 
-- The clustering results are highly dependent on the performance of the Similarity Prediction Network (SPN). For making a fair comparison, the SPN must be kept the same. Our script trains an SPN with random initialization and random data sampling. Once the SPN model is trained, the script will reuse the saved SPN and avoid training a new one. 
+
 - The table below presents the clustering performance with the reference SPN [[download]](https://drive.google.com/file/d/1b-TU3lT1GOaMV8Z4DehFAGyOkHJayLF1/view?usp=sharing). Put the model file into /outputs folder and run demo_omniglot_transfer.py directly to generate the "MCL(k=100)" column.
 - The performance metric is clustering accuracy (for details, please see [L2C](https://arxiv.org/abs/1711.10125) paper). Each value in the table is the average of 3 clustering runs. This repository reuses most of the utilities in PyTorch and is different from the Lua-based implementation used in the reference papers. The result (the row with "--Average--") shows the same trend as the papers, but the absolute values have a mild difference. The MCL results here are better than [the paper](https://arxiv.org/abs/1901.00544).
 
